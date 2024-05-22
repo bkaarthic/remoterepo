@@ -1,0 +1,14 @@
+name: Checkout Code on Linux
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  checkout_code:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
